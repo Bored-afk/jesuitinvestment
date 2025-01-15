@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Styled Webpage</title>
+    <title>Jesuit Dallas Investment Club</title>
     <style>
-        /* Reset styling */
         * {
             margin: 0;
             padding: 0;
@@ -22,7 +21,7 @@
 
         /* Header styling */
         header {
-            background: #003366; /* Navy blue */
+            background: #003c71; /* Navy blue */
             color: #fff; /* White text */
             padding: 1rem 0;
             text-align: center;
@@ -57,6 +56,7 @@
             max-width: 800px;
             margin: 2rem auto;
             padding: 0 1rem;
+            padding-bottom: 5rem;
         }
 
         article {
@@ -64,11 +64,22 @@
             padding: 2rem;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
         }
 
         article h2 {
-            color: #003366; /* Navy blue for headings */
+            text-decoration: none; /* Remove underline */
+            color: #003c71; /* Navy blue for headings */
             margin-bottom: 1rem;
+        }
+
+        article h2 a {
+            color: inherit; /* Inherit color */
+            text-decoration: none; /* Remove underline */
+        }
+
+        article h2 a:hover {
+            text-decoration: underline; /* Add underline on hover */
         }
 
         article p {
@@ -77,8 +88,8 @@
 
         /* Footer styling */
         footer {
-            background: #003366; /* Navy blue */
-            color: #ffd700; /* Gold text */
+            background: #b3a369; /* Gold color */
+            color: #fff; /* White text */
             text-align: center;
             padding: 1rem 0;
             position: fixed;
@@ -93,7 +104,8 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to My Styled Webpage</h1>
+        <h1>Jesuit Dallas Investment Club</h1>
+        <img src="https://www.jesuitdallas.org/uploaded/photos/Communications/shield-gold.png" alt="School Logo" width="85" height="100">
         <nav>
             <ul>
                 <li><a href="home.html">Home</a></li>
@@ -103,15 +115,32 @@
             </ul>
         </nav>
     </header>
+
     <main>
         <article>
             <h2>Welcome</h2>
             <p>This is the main landing page of the website. Use the navigation above to explore different sections.</p>
         </article>
+
+        <article>
+            <h2><a href="article2.html">Japanese Stock Market Meltdown</a></h2>
+            <p>Author: Kevin Martinez</p>
+            <p>Published on: <time datetime="2024-08-16">August 16, 2024</time></p>
+            <p>The Japanese stock market recently crashed dramatically due to concerns about the U.S. economy slowing down and the strengthening of the Japanese yen. This caused panic among investors and led to the biggest single-day point drop in the market's history.</p>
+        </article>
+        <article>
+            <h2><a href="article1.html">NVIDIA's 10:1 Stock Split: A Strategic Move</a></h2>
+            <p>Author: Gage Gutierrez</p>
+            <p>Published on: <time datetime="2024-06-18">June 18, 2024</time></p>
+            <p>Nvidia executed a 10:1 stock split in June 2024 to make its shares more affordable and accessible to investors, potentially broadening its shareholder base and increasing trading volume.</p>
+        </article>
     </main>
+
     <footer>
-        <p>&copy; 2025 Your Website. All rights reserved.</p>
+        <p>&copy; 2025 Jesuit Dallas Investment Club. Not directly affiliated with Jesuit Dallas.</p>
+        <p>Gage Gutierrez & Kevin Martinez</p>
     </footer>
 </body>
 </html>
+
 
